@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+    vector <int> v;
+    for(int i=0; i<10; i++){
+        v.push_back(i);
+    }
+    
+    cout<<"The elements in the vector are: ";
+    for(int i=0; i<10; i++){
+        cout<<v[i]<<" ";
+    }
+    cout<<endl;
+    
+     cout<<"The first element of the vector is: "<<v.front()<<endl;
+     cout<<"The last element of the vector is: "<<v.back()<<endl;
+     cout<<"The size of the vector is: "<<v.size()<<endl;
+     cout<<"Deleting the last element: "<<v.back()<<endl;
+     v.pop_back();
+     cout<<"Now the vector becomes: ";
+     for(auto it = v.begin(); it!=v.end(); it++){
+         cout<<*it<<" ";
+     }
+
+}

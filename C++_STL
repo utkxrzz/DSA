@@ -23,5 +23,21 @@ int main() {
      for(auto it = v.begin(); it!=v.end(); it++){
          cout<<*it<<" ";
      }
+     cout<<endl;
+     
+     cout<<"Inserting 5 as the first element: ";
+     auto it= v.begin();
+     v.insert(it,5);
+     cout<<"Now the vector becomes: ";
+     for(auto it = v.begin(); it!=v.end(); it++){
+         cout<<*it<<" ";
+     }
+         if (v.empty())
+    cout << "\nvector is empty";
+  else
+    cout << "\nvector is not empty" << endl;
 
-}
+  v.clear();
+  cout << "Size of the vector after clearing the vector: " << v.size();
+     }
+    
